@@ -22,15 +22,6 @@ title: Schedule
 <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/gcal.js"></script>
 
-<!-- This script defines the moreaEventData variable containing an array of events from Morea pages. -->
-<script src="schedule-info.js"></script>
-
-<script>
-moreaEventData.push(
-  {title: "Holiday: Thanksgiving", start: "2015-11-26"}
-)
-</script>
-
 
 <div style="margin-bottom: 10px" class="container">
   <h1>Schedule</h1>
@@ -38,10 +29,20 @@ moreaEventData.push(
   <div id='calendar'></div>
 </div>
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     $('#calendar').fullCalendar({
-      eventColor: '#446e9b',
-      events: moreaEventData
+        googleCalendarApiKey: 'AIzaSyDEUR96Sv3mP4FGEBjaMqX0t0ftyRKUges',
+        eventColor: '#446e9b',
+        eventSources: [
+            {
+                googleCalendarId: 'pam2qc7v8m3eqordq9llu4b844@group.calendar.google.com',
+                color: '#f26522',  // HTC Orange for college course events
+                textColor: 'black'
+            },
+            {
+                googleCalendarId: 'q6hg5nt557scbdjtbscikg2lmc@group.calendar.google.com'
+            }
+        ]
     });
-  });
+});
 </script>
