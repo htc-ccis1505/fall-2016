@@ -74,7 +74,7 @@ When you clone a repository for class, it is important that you do it from your 
 
 
 ###  Make Changes
-Now that you have a personal copy of the student directory, you can make changes to the project files.  Use [Brackets](http://brackets.io/) to add a new file as indicated below.  
+Now that you have a personal copy of the student directory, you can make changes to the project files.  Use [Atom](http://atom.io/) to add a new file as indicated below.  
 
 1. In the fund-students directory.  You should see an _data directory with a subdirectory for the current semester.  
 
@@ -82,7 +82,7 @@ Now that you have a personal copy of the student directory, you can make changes
 
 3. Make a copy of the file and rename to *your* GitHub user name with the .yml extension.
 
-4. Open the file in Brackets and update the contents to have your name, a custom emoji, and a short introduction.  Here's a list of the [emoji](http://www.emoji-cheat-sheet.com/) you can use.  Be careful with the formatting. Do not put colons around the emoji name.
+4. Open the file in Atom and update the contents to have your name, a custom emoji, and a short introduction.  Here's a list of the [emoji](http://www.emoji-cheat-sheet.com/) you can use.  Be careful with the formatting. Do not put colons around the emoji name.
 
 5. In most cases, you'd now test to make sure things look OK.  While you could test this locally, there's some extra set up needed for this type of Jekyll GitHub Pages site.  (Look it up later if you are curious.  This is how the course web site is built too.)  We'll skip the testing locally and just commit our change, but you might need to come back later and fix it if you weren't careful.
 
