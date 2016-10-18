@@ -27,6 +27,24 @@
   
 
   
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
 
   <script>
     $(window).load(function () {
@@ -98,13 +116,18 @@
   <div class="container">
     <h2>Learning Outcomes</h2>
 
+    <div class="row">
     
       
-      <h3>File System Shell Commands</h3>
-      <p>
-        
-      </p>
-      <p>Use the shell to perform basic file system commands:</p>
+
+      <!-- Begin a new row if index > 1 and odd -->
+      
+      
+
+      <div class="col-sm-6">
+        <a href="/fall-2016/outcomes/#out-shell-basics" class="thumbnail">
+          <h3>File System Shell Commands</h3>
+          <p>Use the shell to perform basic file system commands:</p>
 
 <ul>
   <li>identify the current working directory</li>
@@ -112,13 +135,24 @@
   <li>change the current working directory</li>
 </ul>
 
+          <p>
+            
+          </p>
+        </a>
+      </div>
+
+
     
       
-      <h3>Basic Git Functions</h3>
-      <p>
-        
-      </p>
-      <p>The student will be able to use git to:</p>
+
+      <!-- Begin a new row if index > 1 and odd -->
+      
+      
+
+      <div class="col-sm-6">
+        <a href="/fall-2016/outcomes/#out-github-basics" class="thumbnail">
+          <h3>Basic Git Functions</h3>
+          <p>The student will be able to use git to:</p>
 
 <ul>
   <li>obtain a local copy of a repository and its files from GitHub</li>
@@ -126,6 +160,13 @@
   <li>version the changes to the repository files</li>
   <li>update GitHub with the revised version of the repository files</li>
 </ul>
+
+          <p>
+            
+          </p>
+        </a>
+      </div>
+
 
     
 
@@ -143,8 +184,13 @@
     <div class="row">
       
         
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
+        
+
         <div class="col-sm-3">
-          <a href="https://mbmosman.gitbooks.io/intro-prog-learn-it-my-way-with-ruby/content/gettingstarted.html" class="thumbnail">
+          <a href="/fall-2016/morea/intro/r1-getting-started.html" class="thumbnail">
             <h4>Getting Started</h4>
             <p>Information on the tools we will be using in this course.</p>
 
@@ -158,11 +204,12 @@
           </a>
         </div>
       
-      
-      
-      
-      
         
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
+        
+
         <div class="col-sm-3">
           <a href="/fall-2016/morea/intro/r2-shell-basics.html" class="thumbnail">
             <h4>Shell Basics</h4>
@@ -180,11 +227,12 @@
           </a>
         </div>
       
-      
-      
-      
-      
         
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
+        
+
         <div class="col-sm-3">
           <a href="/fall-2016/morea/intro/r3-github-basics.html" class="thumbnail">
             <h4>GitHub Basics</h4>
@@ -202,10 +250,6 @@
           </a>
         </div>
       
-      
-      
-      
-      
 
     </div>
   </div>
@@ -220,6 +264,10 @@
     <div class="row">
       
         
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
+        
         <div class="col-sm-3">
           <a href="/fall-2016/morea/intro/ex-install-git.html" class="thumbnail">
             <h4>Install Git</h4>
@@ -231,10 +279,26 @@
           </a>
         </div>
       
+        
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/ex-install-ruby.html" class="thumbnail">
+            <h4>Install Ruby</h4>
+            <p>How to install and use Ruby on Windows and on a Mac.</p>
+
+            <p>
+              
+            </p>
+          </a>
+        </div>
       
-      
-      
-      
+        
+
+        <!-- Begin a new row if index > 1 and odd -->
+        
         
         <div class="col-sm-3">
           <a href="/fall-2016/morea/intro/ex-using-github.html" class="thumbnail">
@@ -247,72 +311,10 @@
           </a>
         </div>
       
-      
-      
-      
-      
 
     </div>
   </div>
 </div>
-
-
-
-<div class="section-background-2">
-  <div class="container">
-    <h2>Assessments</h2>
-
-    
-      
-      <h3>Shell, Git and GitHub Skills</h3>
-      <p>
-        
-      </p>
-    
-    <p>
-      <em>Outcomes assessed:</em>
-      
-      <a href="/outcomes/#out-shell-basics">File System Shell Commands</a>, 
-      
-      <a href="/outcomes/#out-github-basics">Basic Git Functions</a>
-      
-    </p>
-    
-      <p>Student Directory: Assessed knowledge of basic shell, git and GitHub skills.</p>
-
-<link rel="stylesheet" href="https://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-
-<script src="https://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-
-<div class="well">
-  <div id="asm-github-basics" style="height: 250px;"></div>
-</div>
-
-<script>
-Morris.Bar({
-  element: 'asm-github-basics',
-  hideHover: false,
-  data: [
-        { y: 'Very satisfactory (%)', num: 0 },
-        { y: 'Satisfactory (%)', num: 0 },
-        { y: 'Unsatisfactory (%)', num: 0 },
-        { y: 'Absent (%)', num: 0 },
-        ],
-  xkey: 'y',
-  ykeys: ['num'],
-  resize: true,
-  labels: ['Students']
-});
-</script>
-
-
-    
-
-  </div>
-</div>
-
 
 
 
@@ -331,24 +333,7 @@ Morris.Bar({
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
-        Last update on: <span>2016-08-24 02:32:59 -0500</span></p>
-
-      <p style="margin: 0">
-        
-        1 modules
-        
-        | 2 outcomes
-        
-        
-        | 3 readings
-        
-        
-        | 2 experiences
-        
-        
-        | 1 assessments
-        
-      </p>
+        Last update on: <span>2016-10-18 08:22:29 -0500</span></p>
     </div>
   </footer>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Prerequisites | CCIS1505 Fall 2016 </title>
+  <title> Install Ruby | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -90,22 +90,46 @@
 </div>
 
 
-
 <div class="breadcrumb-bar">
   <div class="container">
     <ol class="breadcrumb">
-        
+      
       <li><a href="/fall-2016/">Home</a></li>
-      <li class="active">Prerequisites</li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/intro">Programming: Getting Started </a></li>
+      <li class="active">Install Ruby</li>
     </ol>
   </div>
 </div>
 
+
 <div class="container">
-  <h1>Prerequisites <small>in module order</small></h1>
+  <h1 id="install-ruby">Install Ruby</h1>
+<p>The install process for ruby is different based on the type of computer you are using.  Install information is provided here for Windows &amp; Mac OS.  If you are using Linux, it is likely that you already have git and if not can use the package manager to easily install it.</p>
+
+<h2 id="windows-users">Windows Users</h2>
+<p>If you are a Windows user you will not have ruby available by default.  You will need to download and install ruby from the web. You can get it from <a href="http://rubyinstaller.org/downloads/">Ruby Installer</a>, but will need to carefully choose your version.  It is recommended to use the latest 32 bit Ruby 2.2.X installer.</p>
+
+<p>Make sure that you check the options to add ruby to your path.
+<img class="img-responsive" src="/fall-2016/morea/intro/images/ruby-install-options.png" alt="Screenshot of install options" /></p>
+
+<h2 id="mac-users">Mac Users</h2>
+<p>If you are using a Mac, open up a <a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line">Terminal</a> window and type <code class="highlighter-rouge">ruby --version</code>.  You may find that ruby is already installed, or if not that it will prompt you to install the XCode Command Line Developer Tools.  If it does not, you can install ruby using <a href="https://rvm.io/">RVM</a> which will also allow you to have different versions installed.  This is handy even if it is installed by default as you may want a newer version.</p>
+
+<p>Open terminal and use the following <code class="highlighter-rouge">curl</code> commands to install rvm with the latest stable ruby version.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io | bash -s stable --ruby</code></pre></figure>
+
+<h2 id="verify-install">Verify Install</h2>
+<p>Once you have Ruby installed, make sure to verify that you have access to it from the shell:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>ruby --version</code></pre></figure>
+
+<p>My examples will use Ruby 2.2.x, but any version of Ruby 2 should be fine for this course.</p>
+
+<p>If you are not seeing a line that shows your version of Ruby, you will need to do some troubleshooting or try uninstalling and then reinstalling ruby.  First, close all your shell windows and reopen them to try again.  If you are using the Windows installer, make sure to check the box to add ruby to your path.</p>
+
 </div>
-
-
 
 
 

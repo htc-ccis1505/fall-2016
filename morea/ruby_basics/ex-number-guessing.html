@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Prerequisites | CCIS1505 Fall 2016 </title>
+  <title> Number Guessing Game | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -90,22 +90,41 @@
 </div>
 
 
-
 <div class="breadcrumb-bar">
   <div class="container">
     <ol class="breadcrumb">
-        
+      
       <li><a href="/fall-2016/">Home</a></li>
-      <li class="active">Prerequisites</li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/"></a></li>
+      <li class="active">Number Guessing Game</li>
     </ol>
   </div>
 </div>
 
+
 <div class="container">
-  <h1>Prerequisites <small>in module order</small></h1>
+  <h1 id="number-guessing-game">Number Guessing Game</h1>
+<p>We’re going to write a number guessing game in ruby.</p>
+
+<p>You can get a random number in ruby by using the <code class="highlighter-rouge">rand</code> function.  If you want a number between 1 and 10 you would use:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">10</span><span class="p">)</span></code></pre></figure>
+
+<p>The game should:</p>
+
+<ul>
+  <li>Ask for the player’s name</li>
+  <li>Greet the player by name and explain the game</li>
+  <li>Ask for the maximum number to select as the secret number</li>
+  <li>Pick a secret number at random between 1 and the number entered</li>
+  <li>Ask the player (by name) to guess a number</li>
+  <li>Tell the player if they guessed correctly</li>
+  <li>If they guessed the number correctly, congratulate them for winning and then tell them how many guesses it took for them to win.</li>
+  <li>If they did not guess correctly, tell them whether their guess was too high or too low.</li>
+</ul>
+
 </div>
-
-
 
 
 
