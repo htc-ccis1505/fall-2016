@@ -4,7 +4,7 @@ morea_id: home
 morea_type: home
 ---
 
-## Welcome to CCIS 1505
+## Welcome to CCIS 1505: Fund. of Programming
 
 ### Course Description
 This course is the first course for a student planning to study computer programming. The course content introduces the student to both procedure-oriented and object-oriented programming languages. Structured computer programs will be written with an emphasis on procedure-oriented programming. Topics will include objects, classes, methods, properties, flowcharting, pseudocode, top down design, logic structures, data structures and types, decisions, subroutines, looping, sequential file processing, arrays and building graphical user interfaces.
