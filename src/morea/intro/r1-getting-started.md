@@ -3,7 +3,7 @@ title: "Getting Started"
 published: true
 morea_id: getting-started
 morea_summary: "Information on the tools we will be using in this course."
-morea_url: https://mbmosman.gitbooks.io/intro-prog-learn-it-my-way-with-ruby/content/gettingstarted.html
+#morea_url: https://mbmosman.gitbooks.io/intro-prog-learn-it-my-way-with-ruby/content/gettingstarted.html
 morea_type: reading
 morea_sort_order: 2
 morea_labels:

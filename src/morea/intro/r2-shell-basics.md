@@ -12,6 +12,20 @@ morea_labels:
 ---
 
 # Shell Basics
+
+## Running the Shell
+We will be using the shell a lot, so you may want to pin it to your task bar or make an easily accessible shortcut.
+
+
+### Windows
+On Windows you will use PowerShell.  You can access this from the Windows (Start) Menu and then type in PowerShell to search for it.  
+
+### Mac
+On Mac you will use Terminal.  You can find Terminal in Finder, under Applications -> Utilities, or you can type in the name in the search to find it.
+
+
+
+## Basic Commands
 When I include shell commands in the notes, the lines will begin with a $ (dollar sign). That indicates the prompt or the start of the shell command line. The *prompt* will look different based on what type of computer you are using, so we use the $ to indicate the prompt in a generic way.  _When entering commands do not type in the $; only type in the text that follows it._
 
 Having the $ there to indicate the prompt is important as it allows us to differentiate commands that you would type in from the results of entering that command.  Any lines without the $ at the beginning of the line, will show you sample output from entering a command. Note that many commands do not give you output when successful.

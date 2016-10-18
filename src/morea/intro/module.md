@@ -11,9 +11,10 @@ morea_readings:
  - github-basics
 morea_experiences:
  - install-git
+ - install-ruby
  - using-github
 morea_assessments:
- - asm-github-basics
+# - asm-github-basics
 morea_type: module
 #morea_icon_url: /morea/intro/intro-logo.png
 morea_summary: "This module provides an introduction the tools used for programming."

@@ -14,7 +14,7 @@ If you do not already have a [GitHub](https://github.com/) account, please visit
 The following topics were covered earlier:
 
 - [Install Git]( {{ site.baseurl }}/morea/intro/ex-install-git.html ): To complete this exercise, you need to have git installed.  
-- Install [Atom](https://atom.io/): You should use Brackets to edit the files.  
+- Install [Atom](https://atom.io/): You should use Atom (or another programming editor) to edit the files.  
 - [Shell Basics]( {{ site.baseurl }}/morea/intro/r2-shell-basics.html ): I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.
 
 
