@@ -1,5 +1,5 @@
 ---
-title: "Programming: Getting Started "
+title: "Getting Started "
 published: true
 morea_id: intro
 morea_outcomes:
