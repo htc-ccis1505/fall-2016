@@ -24,7 +24,7 @@ Use the following link to create your own repository to submit the assignment on
 
 Click the link to have the assignment created for you, then click the link to go to your personal assignment repository on GitHub.
 
-To complete the assignment, you will need to clone the repository to your computer, make changes to the lab1.rb file, add and commit those changes using git commands, then push those changes back up to GitHub.  You can review how to do this in the [GitHub Student Directory Assignment](http://127.0.0.1:4000/morea/intro/ex-using-github.html)
+To complete the assignment, you will need to clone the repository to your computer, make changes to the lab1.rb file, add and commit those changes using git commands, then push those changes back up to GitHub.  You can review how to do this in the [GitHub Student Directory Assignment]( {{ site.baseurl }}/morea/intro/ex-using-github.html).
 
 ## Ruby Script
 You will need to write this code in a ruby script file to save and run from the command shell.

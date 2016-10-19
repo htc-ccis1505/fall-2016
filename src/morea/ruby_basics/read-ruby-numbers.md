@@ -38,4 +38,4 @@ Use Ruby to:
 - Calculate how many hours are in a year
 - Calculate how many minutes are in a decade (10 years)
 - Calculate your age in seconds
-- Determine the age, in years, of someone who is 1246 seconds old
+- Determine the age, in years, of someone who is 1246 million (1,246,000,000) seconds old
