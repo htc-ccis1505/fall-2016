@@ -28,7 +28,7 @@ You can get out of the interactive ruby by entering in `exit`.
 - What is the difference between an integer and a float?
 - How do you multiply two numbers in ruby?
 - How do you divide one number by another?
-- Why is 9/4 in ruby 4 and not 4.5?  What would you need to do to get 4.5?
+- Why is 9/2 in ruby 4 and not 4.5?  What would you need to do to get 4.5?
 
 ## Try it!
 Do the practice exercises from the end of the chapter.
