@@ -2,7 +2,7 @@
 title: "Ruby Methods & Program Flow"
 published: true
 morea_id: ruby-methods-flow
-morea_icon_url: /morea/ruby_methods-flow/ruby-more-logo.png
+morea_icon_url: /morea/ruby_methods-flow/ruby-methods-logo.png
 morea_outcomes:
  - out-ruby-flow
  - out-ruby-arrays
