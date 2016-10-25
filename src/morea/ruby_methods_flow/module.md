@@ -2,7 +2,7 @@
 title: "Ruby Methods & Program Flow"
 published: true
 morea_id: ruby-methods-flow
-morea_icon_url: /morea/ruby_methods-flow/ruby-methods-logo.png
+morea_icon_url: /morea/ruby_methods_flow/ruby-methods-logo.png
 morea_outcomes:
  - out-ruby-flow
  - out-ruby-arrays
@@ -17,7 +17,6 @@ morea_experiences:
 morea_assessments:
 # - asm-github-basics
 morea_type: module
-#morea_icon_url: /morea/intro/intro-logo.png
 morea_summary: "This module continues introducing basic programming in Ruby with conditional statements, iteration, arrays, and custom methods."
 morea_labels:
 morea_sort_order: 2
