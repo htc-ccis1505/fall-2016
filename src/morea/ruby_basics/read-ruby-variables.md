@@ -10,7 +10,7 @@ morea_labels:
  - textbook
 ---
 
-# Ruby Numbers
+# {{ page.title }}
 Read through Chapter 4 in the printed textbook, or Chapter 3 in the online [Learn to Program](https://pine.fm/LearnToProgram/chap_03.html), which covers how to use variables in Ruby.
 
 As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.  

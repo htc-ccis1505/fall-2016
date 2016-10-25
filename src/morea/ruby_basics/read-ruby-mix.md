@@ -10,7 +10,7 @@ morea_labels:
  - textbook
 ---
 
-# Ruby Numbers
+# {{ page.title }}
 Read through Chapter 5 in the printed textbook, or Chapter 4 in the online [Learn to Program](https://pine.fm/LearnToProgram/chap_04.html), which reviews working with numbers, strings, and variables all mixed together.
 
 As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.  

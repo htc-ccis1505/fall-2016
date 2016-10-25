@@ -10,7 +10,7 @@ morea_labels:
  - textbook
 ---
 
-# Ruby Numbers
+# {{ page.title }}
 Read through Chapter 3 in the printed textbook, or Chapter 2 in the online [Learn to Program](https://pine.fm/LearnToProgram/chap_02.html), which covers how to work with strings of text in Ruby.
 
 As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.  

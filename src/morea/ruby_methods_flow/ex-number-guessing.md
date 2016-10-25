@@ -8,12 +8,16 @@ morea_sort_order: 1
 ---
 
 # Number Guessing Game
-We're going to write a number guessing game in ruby.  
+We're going to write a number guessing game in ruby.
 
-You can get a random number in ruby by using the `rand` function.  If you want a number between 1 and 10 you would use:
-{% highlight ruby %}
-rand(1..10)
-{% endhighlight %}
+## Starter files from GitHub
+Use the following link to create your own repository to submit the assignment on GitHub:
+[Ruby Lab 2](https://classroom.github.com/assignment-invitations/e71b45afdd73cb61d2c8605fd5f105e9)
+
+Click the link to have the assignment created for you, then click the link to go to your personal assignment repository on GitHub.
+
+## Ruby Script
+Update the existing ruby script file.  
 
 The game should:
 
@@ -25,3 +29,5 @@ The game should:
 - Tell the player if they guessed correctly
 - If they guessed the number correctly, congratulate them for winning and then tell them how many guesses it took for them to win.
 - If they did not guess correctly, tell them whether their guess was too high or too low.
+
+Make sure to build methods to help break down the problem and make the code easier to read.

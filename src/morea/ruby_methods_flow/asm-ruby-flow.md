@@ -1,0 +1,36 @@
+---
+title: "Ruby Logic & Flow Control"
+published: true
+morea_id: asm-ruby-flow
+morea_type: assessment
+morea_sort_order: 1
+morea_outcomes_assessed:
+  - out-ruby-flow
+---
+
+Manage program flow in Ruby using conditional statements and iteration.
+
+<link rel="stylesheet" href="https://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-github-basics" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-github-basics',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
