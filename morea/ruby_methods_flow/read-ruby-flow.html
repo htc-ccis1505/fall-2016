@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Simple Ruby Script | CCIS1505 Fall 2016 </title>
+  <title> Ruby: Conditional Statements & Loops | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -96,48 +96,55 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/ruby-basics">Ruby Basics</a></li>
-      <li class="active">Simple Ruby Script</li>
+      <li><a href="/fall-2016/modules/ruby-methods-flow">Ruby Methods & Program Flow</a></li>
+      <li class="active">Ruby: Conditional Statements & Loops</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="simple-conversation-in-ruby">Simple Conversation in Ruby</h1>
-<p>We’re going to write a script to have a simple conversation in Ruby.</p>
+  <h1 id="ruby-conditional-statements--loops">Ruby: Conditional Statements &amp; Loops</h1>
+<p>Read through Chapter 7 in the printed textbook, or Chapter 6 in the online <a href="https://pine.fm/LearnToProgram/chap_06.html">Learn to Program</a>, which covers how to work with strings of text in Ruby.</p>
 
-<h2 id="prerequisits">Prerequisits</h2>
-<p>The following topics were covered earlier:</p>
+<p>As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.</p>
+
+<h2 id="note-on-equality-vs-assignment">Note on Equality vs Assignment</h2>
+<p>Note that in Ruby a single = will do a variable assignment and double == will test for equality. Confusing the two is a <strong>very</strong> common error.</p>
+
+<h2 id="indentation">Indentation</h2>
+<p>While it is not syntactically required that you indent your code inside of branching and looping code, you may loose points for this as it makes your code less readable and more likely to contain errors.</p>
+
+<h2 id="review-questions">Review Questions</h2>
 
 <ul>
-  <li><a href="/fall-2016/morea/intro/ex-install-git.html">Install Git</a>: To complete this exercise, you need to have git installed.</li>
-  <li><a href="/fall-2016/morea/intro/ex-install-ruby.html">Install Ruby</a>: To complete this exercise, you must have ruby installed.</li>
-  <li>Install <a href="https://atom.io/">Atom</a>: You should use Atom (or another programming editor) to edit the files.</li>
-  <li><a href="/fall-2016/morea/intro/r2-shell-basics.html">Shell Basics</a>: I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.</li>
+  <li>How would you determine if a number was less than zero?</li>
+  <li>How would you determine if a variable was equal to 42?</li>
+  <li>How would you determine if a letter was not a vowel?</li>
+  <li>Write code to ask for a number then say whether is it greater than, equal to, or less than zero.</li>
+  <li>How would you write a loop to say hello 3 times?</li>
+  <li>What does <code class="highlighter-rouge">break</code> do and why might you use it?</li>
+  <li>Why is <code class="highlighter-rouge">while 'Spike' &gt; 'Angel'</code> the same thing as saying <code class="highlighter-rouge">while true</code>?  (Note this is a Ruby question where the answer is absolute, not a Buffy question where opinions may differ.)</li>
+  <li>What is that <code class="highlighter-rouge">elsif</code> word used for?</li>
+  <li>What is the DRY rule?  (Someone might mention this someday in an interview…)</li>
+  <li>What does <code class="highlighter-rouge">true || false</code> evaluate to?</li>
+  <li>What does <code class="highlighter-rouge">true &amp;&amp; false</code> evaluate to?</li>
 </ul>
 
-<h2 id="starter-files-from-github">Starter files from GitHub</h2>
-<p>Use the following link to create your own repository to submit the assignment on GitHub:
-<a href="https://classroom.github.com/assignment-invitations/af8e1933e70e3b8874dc010a630fdc26">Ruby Lab 1</a></p>
-
-<p>Click the link to have the assignment created for you, then click the link to go to your personal assignment repository on GitHub.</p>
-
-<p>To complete the assignment, you will need to clone the repository to your computer, make changes to the lab1.rb file, add and commit those changes using git commands, then push those changes back up to GitHub.  You can review how to do this in the <a href="/fall-2016/morea/intro/ex-using-github.html">GitHub Student Directory Assignment</a>.</p>
-
-<h2 id="ruby-script">Ruby Script</h2>
-<p>You will need to write this code in a ruby script file to save and run from the command shell.</p>
-
-<p>The script should:</p>
+<h2 id="try-it">Try It!</h2>
 
 <ul>
-  <li>Ask for the person’s name</li>
-  <li>Greet the player by name</li>
-  <li>Ask for the person’s age (in years)</li>
-  <li>Tell the person how old they are in minutes (based on the years entered)</li>
-  <li>Ask the person what the temperature is in degrees Fahrenheit</li>
-  <li>Tell the person what the temperature is in degrees Celsius</li>
-  <li>Thank the person by name for stopping by</li>
+  <li>Write a <strong>DRY</strong> script to print the lyrics to 99 Bottles of Beer on the Wall.</li>
+  <li>Write the <em>Deaf Grandma</em> program described in the text.
+    <ol>
+      <li>Whatever you say to grandma (whatever you type in), she should respond with <code class="highlighter-rouge">HUH?!  SPEAK UP, SONNY!</code>, unless you shout it (type in all capitals).</li>
+      <li>If you shout, she can hear you (or at least she thinks so) and yells back, <code class="highlighter-rouge">NO, NOT SINCE 1938!</code></li>
+      <li>To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950.</li>
+      <li>You can’t stop talking to grandma until you shout <code class="highlighter-rouge">BYE</code>.</li>
+    </ol>
+  </li>
+  <li>Extend your Deaf Grandma program: What if grandma doesn’t want you to leave? When you shout <code class="highlighter-rouge">BYE</code>, she could pretend not to hear you. Change your previous program so that you have to shout <code class="highlighter-rouge">BYE</code> three times in a row. Make sure to test your program: if you shout BYE three times, but not in a row, you should still be talking to grandma.</li>
+  <li>Leap Years: Write a program which will ask for a starting year and an ending year, and then puts all of the leap years between them (and including them, if they are also leap years). Leap years are years divisible by four (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) unless they are divisible by 400 (like 1600 and 2000, which were in fact leap years).</li>
 </ul>
 
 </div>

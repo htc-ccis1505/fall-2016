@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Number Guessing Game | CCIS1505 Fall 2016 </title>
+  <title> Ruby: Custom Methods | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -96,32 +96,36 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/"></a></li>
-      <li class="active">Number Guessing Game</li>
+      <li><a href="/fall-2016/modules/ruby-methods-flow">Ruby Methods & Program Flow</a></li>
+      <li class="active">Ruby: Custom Methods</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="number-guessing-game">Number Guessing Game</h1>
-<p>We’re going to write a number guessing game in ruby.</p>
+  <h1 id="ruby-custom-methods">Ruby: Custom Methods</h1>
+<p>Read through Chapter 9 in the printed textbook, or Chapter 8 in the online <a href="https://pine.fm/LearnToProgram/chap_03.html">Learn to Program</a>, which covers how to make your own methods in Ruby.</p>
 
-<p>You can get a random number in ruby by using the <code class="highlighter-rouge">rand</code> function.  If you want a number between 1 and 10 you would use:</p>
+<p>As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">10</span><span class="p">)</span></code></pre></figure>
+<h2 id="notes">Notes</h2>
+<p>Remember to use descriptive names for your methods and their input variables, but also remember that you cannot use spaces in these names.</p>
 
-<p>The game should:</p>
+<h2 id="review-questions">Review Questions</h2>
 
 <ul>
-  <li>Ask for the player’s name</li>
-  <li>Greet the player by name and explain the game</li>
-  <li>Ask for the maximum number to select as the secret number</li>
-  <li>Pick a secret number at random between 1 and the number entered</li>
-  <li>Ask the player (by name) to guess a number</li>
-  <li>Tell the player if they guessed correctly</li>
-  <li>If they guessed the number correctly, congratulate them for winning and then tell them how many guesses it took for them to win.</li>
-  <li>If they did not guess correctly, tell them whether their guess was too high or too low.</li>
+  <li>How do you make a custom method in Ruby?</li>
+  <li>How do you give it input values?</li>
+  <li>What does it mean for a method to return a value?</li>
+  <li>Do all methods have to return a value?</li>
+</ul>
+
+<h2 id="try-it">Try It!</h2>
+
+<ul>
+  <li>Write a method to translate a “classic” Roman numeral to a number.  (Classic means you don’t have to deal with IV being 4. Only IIII would be 4.)</li>
+  <li>Write a method to translate “modern” Roman numerals to a number.  (Now you’ve got to deal with IV being 4.)</li>
 </ul>
 
 </div>
@@ -139,7 +143,7 @@
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
-        Last update on: <span>2016-10-19 18:40:37 -0500</span></p>
+        Last update on: <span>2016-10-25 06:34:48 -0500</span></p>
     </div>
   </footer>
 </div>

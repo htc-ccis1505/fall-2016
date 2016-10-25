@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Ruby: More Methods | CCIS1505 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1505 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/ruby-methods-flow">Ruby Methods &amp; Program Flow</a></li>
+      <li class="active">Ruby: More Methods</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="ruby-more-methods">Ruby: More Methods</h1>
+<p>Read through Chapter 6 in the printed textbook, or Chapter 5 in the online <a href="https://pine.fm/LearnToProgram/chap_05.html">Learn to Program</a>, which introduces Ruby built-in methods for strings, more math stuff, and random numbers.</p>
+
+<p>As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.</p>
+
+<h2 id="what-must-you-remember">What must you remember?</h2>
+<p>When working in text based languages, at some point you’ve got to commit methods to memory so that you remember exactly what they are called and what input is required.  While it is not required that you memorize every method available in Ruby, you’ll need to remember methods introduced in the reading and in-class, unless it is documented otherwise.</p>
+
+<div class="alert alert-info" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":notebook:" alt=":notebook:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d3.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>If you have trouble remembering the methods we learn, it may be a good idea to make a list for your test notes.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>For this chapter in the text, pay particular attention to these string methods discussed:</p>
+
+<ul>
+  <li>reverse</li>
+  <li>length</li>
+  <li>upcase</li>
+  <li>downcase</li>
+  <li>swapcase</li>
+  <li>capitalize</li>
+</ul>
+
+<p>These are unlikely to be on a test or quiz, but might be handy in a project:
+- center
+- ljust
+- rjust</p>
+
+<p>The additional math operators for exponent ** and modulus % may also come in handy.</p>
+
+<p>You’ll definitely want to remember the rand method. Remember that if you give it only one number, it will not give you that number randomly.  It is a value from 0 up to but not including the number given.</p>
+
+<p>The Math object is also worth noting as it is a just a little different.  <code class="highlighter-rouge">Math</code> is an object much like a string is an object. In the earlier examples we were calling methods on variables:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">name</span> <span class="o">=</span> <span class="s1">'Buffy'</span>
+<span class="nb">puts</span> <span class="nb">name</span><span class="p">.</span><span class="nf">upcase</span></code></pre></figure>
+
+<p>In the Math examples, we’re using the Math object in front of the . before the name of the method, instead of a variable.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span></code></pre></figure>
+
+<p>The only things from the Math object you may need to know are PI (a constant - a value that does not change) or the <code class="highlighter-rouge">sqrt</code> method.</p>
+
+<h2 id="review-questions">Review Questions</h2>
+
+<ul>
+  <li>Why do some methods have () after the name and others do not?</li>
+  <li>How could you find out how many letters are in a word?  Will this work no matter what or are there things that could cause it to give an incorrect answer?</li>
+  <li>How do I get a random number between 0 and 10 in Ruby?</li>
+  <li>What could you do if you wanted a random number between 1 and 10?  (There is a way to specify a range, but how could you do it with the method shown in the book?)</li>
+</ul>
+
+<h2 id="try-it">Try It!</h2>
+<p>Write the Angry Boss program as discussed in the text.</p>
+
+<ol>
+  <li>It should rudely ask what you want.</li>
+  <li>Whatever you answer, the Angry Boss should yell it back to you, and then fire you.</li>
+</ol>
+
+<p>For example, if you type in <code class="highlighter-rouge">I want a raise.</code>, it should yell back <code class="highlighter-rouge">WHADDAYA MEAN "I WANT A RAISE."?!?  YOU'RE FIRED!!</code>`</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+        Last update on: <span>2016-10-25 06:34:48 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
