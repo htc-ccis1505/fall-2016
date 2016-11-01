@@ -9,7 +9,7 @@ morea_readings:
  - read-more-iterators
  - read-more-strings
 morea_experiences:
- - ex-number-guessing
+ - ex-hangman-helper
 morea_assessments:
 # - asm-github-basics
 morea_type: module
