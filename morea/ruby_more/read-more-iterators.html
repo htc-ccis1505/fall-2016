@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Ruby: Custom Methods | CCIS1505 Fall 2016 </title>
+  <title> Ruby: More Iterators | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -96,36 +96,48 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/ruby-methods-flow">Ruby Methods & Program Flow</a></li>
-      <li class="active">Ruby: Custom Methods</li>
+      <li><a href="/fall-2016/modules/ruby-more">Ruby More Strings & Iterators</a></li>
+      <li class="active">Ruby: More Iterators</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="ruby-custom-methods">Ruby: Custom Methods</h1>
-<p>Read through Chapter 9 in the printed textbook, or Chapter 8 in the online <a href="https://pine.fm/LearnToProgram/chap_03.html">Learn to Program</a>, which covers how to make your own methods in Ruby.</p>
+  <h1 id="ruby-more-iterators">Ruby: More Iterators</h1>
+<p>More ways to iterate in Ruby code.</p>
 
-<p>As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.</p>
+<h2 id="review-each-iterator">Review: Each Iterator</h2>
+<p>The each iterator was introduced earlier in the reading:</p>
 
-<h2 id="notes">Notes</h2>
-<p>Remember to use descriptive names for your methods and their input variables, but also remember that you cannot use spaces in these names.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">fruit</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Apple'</span><span class="p">,</span> <span class="s1">'Banana'</span><span class="p">,</span> <span class="s1">'Cherry'</span><span class="p">,</span> <span class="s1">'Date'</span><span class="p">]</span>
 
-<h2 id="review-questions">Review Questions</h2>
+<span class="n">fruit</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">item</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">item</span>
+<span class="k">end</span></code></pre></figure>
 
-<ul>
-  <li>How do you make a custom method in Ruby?</li>
-  <li>How do you give it input values?</li>
-  <li>What does it mean for a method to return a value?</li>
-  <li>Do all methods have to return a value?</li>
-</ul>
+<p>This iterator is handy if you want to do something to each item in an array, but do not care what position the item is in.</p>
+
+<h2 id="each-with-index">Each with Index</h2>
+<p>Often however, you’ll care what the index is.  Ruby also has an iterator that gives you the index:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">fruit</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">item</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">"Item "</span> <span class="o">+</span> <span class="n">index</span><span class="p">.</span><span class="nf">to_s</span> <span class="o">+</span> <span class="s2">" is "</span> <span class="o">+</span> <span class="n">item</span>
+<span class="k">end</span></code></pre></figure>
+
+<h2 id="for-loop">For Loop</h2>
+<p>Many programming languages make use of for loops.  Ruby programmers tend to prefer the iterators, but a more traditional for loop is also available.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">limit</span> <span class="o">=</span> <span class="n">fruit</span><span class="p">.</span><span class="nf">length</span>
+<span class="k">for</span> <span class="n">counter</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="nf">.</span><span class="n">limit</span>
+  <span class="nb">puts</span> <span class="n">fruit</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span>
+<span class="k">end</span></code></pre></figure>
 
 <h2 id="try-it">Try It!</h2>
 
 <ul>
-  <li>Write a method to translate a “classic” Roman numeral to a number.  (Classic means you don’t have to deal with IV being 4. Only IIII would be 4.)</li>
-  <li>Write a method to translate “modern” Roman numerals to a number.  (Now you’ve got to deal with IV being 4.)</li>
+  <li>Write a while loop to display each item in an array one at a time.</li>
+  <li>Write a method that returns a list with only the even numbered items from an original list.</li>
 </ul>
 
 </div>
@@ -139,11 +151,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
-        Last update on: <span>2016-10-25 16:37:14 -0500</span></p>
+        Last update on: <span>2016-11-01 07:22:23 -0500</span></p>
     </div>
   </footer>
 </div>
