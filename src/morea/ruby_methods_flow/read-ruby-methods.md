@@ -25,8 +25,9 @@ Remember to use descriptive names for your methods and their input variables, bu
 - How do you give it input values?
 - What does it mean for a method to return a value?
 - Do all methods have to return a value?
+- What does it mean to be a local variable?
 
 ## Try It!
 
-- Write a method to translate a "classic" Roman numeral to a number.  (Classic means you don't have to deal with IV being 4. Only IIII would be 4.)
-- Write a method to translate "modern" Roman numerals to a number.  (Now you've got to deal with IV being 4.)
+- Write a method to translate an integer into a "classic" Roman numeral.  (Classic means you don't have to deal with IV being 4. Only IIII would be 4.)
+- Write a method to translate an integer into a "modern" Roman numeral.  (Now you've got to deal with IV being 4.)

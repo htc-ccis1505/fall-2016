@@ -1,5 +1,5 @@
 ---
-title: "Basic Ruby Skills"
+title: "Ruby Methods"
 published: true
 morea_id: asm-ruby-methods
 morea_type: assessment
