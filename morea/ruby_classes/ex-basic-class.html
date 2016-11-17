@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Ruby: Letters | CCIS1505 Fall 2016 </title>
+  <title> Basic Ruby Class | CCIS1505 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -96,38 +96,52 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/ruby-basics">Ruby Basics</a></li>
-      <li class="active">Ruby: Letters</li>
+      <li><a href="/fall-2016/modules/ruby-intro-objects">Object Oriented Ruby</a></li>
+      <li class="active">Basic Ruby Class</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="ruby-letters">Ruby: Letters</h1>
-<p>Read through Chapter 3 in the printed textbook, or Chapter 2 in the online <a href="https://pine.fm/LearnToProgram/chap_02.html">Learn to Program</a>, which covers how to work with strings of text in Ruby.</p>
+  <h1 id="basic-ruby-class">Basic Ruby Class</h1>
+<p>Let’s write a basic class in Ruby!</p>
 
-<p>As you read through the text, make sure you are sitting at your computer and trying the commands in interactive ruby from the shell.</p>
+<h2 id="starter-files-from-github">Starter files from GitHub</h2>
+<p>Use the following link to create your own repository to submit the assignment on GitHub:
+<a href="https://classroom.github.com/assignment-invitations/d7a5597ac5b71534691697d6407b9598">Ruby Lab 5</a></p>
 
-<h2 id="notes">Notes</h2>
-<p>The examples in the text and on the web use single quotes for strings:</p>
+<p>Click the link to have the assignment created for you, then click the link to go to your personal assignment repository on GitHub.</p>
 
-<p><code class="highlighter-rouge">puts 'Hello, World'</code></p>
+<h2 id="make-a-die-class">Make a Die class</h2>
+<p>We’re going to make a class for a multi-sided <a href="https://en.wikipedia.org/wiki/Dice">die</a>.</p>
 
-<p>It is generally considered a better practice to use double quotes for strings:
-<code class="highlighter-rouge">puts "Hello, World"</code></p>
-
-<p>This is because you are more likely to need to use a ‘ in a string than a “, so using the double quotes means less need to escape characters.</p>
-
-<h2 id="review-questions">Review Questions</h2>
+<p>The die should have two properties:</p>
 
 <ul>
-  <li>What is a string?</li>
-  <li>What is an empty string?</li>
-  <li>Why is a string like this ‘   ‘ not an empty string?</li>
-  <li>Why is the result of 1 + 2 not the same as ‘1’ + ‘2’?</li>
-  <li>Why is 9/4 in ruby 4 and not 4.5?  What would you need to do to get 4.5?</li>
-  <li>What does it mean to escape a character?</li>
+  <li>a number of sides</li>
+  <li>the “shown” side (the value that would be read for the roll)</li>
+</ul>
+
+<p>And two behaviors:</p>
+<ul>
+  <li>roll - generates the random number for the roll, setting the “shown” side</li>
+  <li>get showing -  returns the number on the “shown” side, the number that would be read for the most recent roll.  Note that this should not roll the die, it should just read the roll.</li>
+</ul>
+
+<p>There is an example of a Die class in the reading, but it is just a standard 6-sided die.  You can start with this example, but it is not complete.  This class should allow different numbers of sides.</p>
+
+<p>Technically a die can’t really be 1, 2, or 3 sided - and some numbers of sides are more “fair” than others, but for right now we’re going to ignore most of this.  We can have the code that creates the die prevent certain numbers, but for now we’ll leave that out of the class itself.</p>
+
+<h2 id="write-a-test-script">Write a test script</h2>
+<p>Test your object by creating code to:</p>
+
+<ul>
+  <li>Ask the user how many sides their Die should have</li>
+  <li>Don’t accept numbers less than 4.  Give an error and ask again.</li>
+  <li>Create a new instance of the Die class that has that number of sides</li>
+  <li>Repeat asking the user if they want to roll the die.  Stop when they say “No”.  Make this check case in-sensitive.  It should stop for “NO”, “no”, or any combination of upper/lowercase letters.</li>
+  <li>When they say no (again, case insensitive), ask them if they would like to create a different die.  If they say no, end the program.  If they say yes, repeat these steps.</li>
 </ul>
 
 </div>
